@@ -12,12 +12,18 @@ body {
 
 /* Top Navbar Styling*/
 
-.dropdown {
+
+#dropdown {
     float:right;
     margin-right: 20px;
+    background-color: transparent;
+    border:none;
+    color:white;
+    font-size:60px;
 }
 
 #top-navbar .logo {
+    margin-top:18px;
     margin-left: 20px;
 }
 #top-navbar {
@@ -30,23 +36,26 @@ body {
 
 .top-nav-icons {
     padding:0px;
-    margin:0px;
+    margin:15px 0px 0px 0px;
+
 }
      
   .top-nav-icon {
     list-style: none;  
     width: 100%;   
     padding:0px;
-    background-color: black;
+    background-color: rgb(36,41,46);
+    border-bottom:1px solid white
    }
     
   #top-navbar a {
     text-decoration: none;
     color: white;
-    display: block;
     font-size:1.5rem;
     margin-left:20px
    } 
+
+   
 
 .top-nav-icon a:hover {
     color: rgb(42, 142, 241);
@@ -123,7 +132,6 @@ body {
 }
 
 #content .head-content {
-    width:80%;
     margin:auto;
     /*background-image: repeating-linear-gradient(30deg, rgb(36,41,46) 50%, rgb(45, 52, 114));*/
 }
@@ -182,12 +190,6 @@ body {
     color: black;;
 }
    
-   
-  /*ul {
-    font-family: sans-serif; 
-    color: #CCCCCC; 
-    font-size: large;	 
-    }*/
 
     @media screen and (max-width: 800px) {
         #side-navbar{
@@ -216,7 +218,13 @@ body {
         #top-navbar{
             display: none;
         }
+        #content .heading {
+            width:80%;
+            margin:auto;
+        }
         #content{
             top: 0px;
         }
     }
+
+    
