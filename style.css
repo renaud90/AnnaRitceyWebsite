@@ -20,10 +20,13 @@ body {
     border:none;
     color:white;
     font-size:60px;
+    vertical-align: middle;
 }
 
 #top-navbar .logo {
-    margin-top:18px;
+    line-height:100px;
+    display:inline-block;
+    vertical-align: middle;
     margin-left: 20px;
 }
 #top-navbar {
@@ -36,7 +39,6 @@ body {
 
 .top-nav-icons {
     padding:0px;
-    margin:15px 0px 0px 0px;
 
 }
      
@@ -74,15 +76,19 @@ body {
 }
 
 .side-nav-icons{
-    display: block;
-    padding: 0px;
+    display:block;
     list-style: none;
+    padding: 0px;
     text-align: center;
+    margin: auto;
+    margin-top:30%;
 }
 
-.side-nav-icons .logo{
-    margin-top: 5%;
-    margin-bottom: 60%;
+#side-navbar .logo{
+    display:block;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 .side-nav-icon {
@@ -95,11 +101,19 @@ body {
     font-size: 1.5rem;
 }
 
-.side-nav-icon a:hover {
+.side-nav-icon a:hover,
+.email:hover{
     color: rgb(42, 142, 241);
     font-size: 1.6rem;
+    transform: scale(1.2)
 }
 
+.email {
+    position: absolute;
+    bottom: 50px;
+    left:40%;
+    color:white;
+}
 
 /* Main Content Styling*/
 
